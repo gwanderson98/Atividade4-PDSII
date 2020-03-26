@@ -1,0 +1,8 @@
+<div>
+    <h3>Carrinho de Compras</h3>
+    <ul>
+        <li *ngFor='let produtoCarrinho of produtosCarrinhos'>{{produtoCarrinho.id}} - {{produtoCarrinho.nome}}</li>
+    </ul>
+</div>
+
+<app-compras (adicionaCarrinho)="onAddCarrinho($event)"></app-compras>

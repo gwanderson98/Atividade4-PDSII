@@ -1,0 +1,7 @@
+<div>
+    <h3>Compras</h3>
+    <p>Items no carrinho {{this.itemsCarrinho}} </p>
+    <ul>
+        <li *ngFor='let produto of produtos'> {{produto.id}} - {{produto.nome}} <button (click)="addProduto(produto.id, produto.nome)">ADD</button></li>
+    </ul>
+</div>
